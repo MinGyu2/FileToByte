@@ -11,18 +11,21 @@
  ![Pasted image 20230116124202](https://user-images.githubusercontent.com/31990118/212647141-6cdd8605-3afa-4cec-b12a-03643b9d5763.png)
  * 출처:  [Working with Magic numbers in Linux - GeeksforGeeks](https://www.geeksforgeeks.org/working-with-magic-numbers-in-linux/)
 
+
+
 ### 동작 화면
  ![Pasted image 20230116183519](https://user-images.githubusercontent.com/31990118/212647227-1f385ced-1d8d-4bf1-a5ff-de5dba0a6bdc.png)
 
 
 
-개발 ide
-	vscode
+### 개발 
+ - ide
+ - vscode
 
-개발 언어
-	java
+### 개발 언어
+ - java
 
-참고 사이트
+### 참고 사이트
  - https://hianna.tistory.com/587
  - [Working with Magic numbers in Linux - GeeksforGeeks](https://www.geeksforgeeks.org/working-with-magic-numbers-in-linux/)
  - [[JAVA] JAVA의 입출력, 바이트 스트림(ByteStream) | Yoon's Dev (tistory.com)](https://yooniron.tistory.com/17)
