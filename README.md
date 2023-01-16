@@ -9,7 +9,7 @@
 
 ### 예상 동작 화면
  ![Pasted image 20230116124202](https://user-images.githubusercontent.com/31990118/212647141-6cdd8605-3afa-4cec-b12a-03643b9d5763.png)
- 출처:  [Working with Magic numbers in Linux - GeeksforGeeks](https://www.geeksforgeeks.org/working-with-magic-numbers-in-linux/)
+ * 출처:  [Working with Magic numbers in Linux - GeeksforGeeks](https://www.geeksforgeeks.org/working-with-magic-numbers-in-linux/)
 
 ### 동작 화면
  ![Pasted image 20230116183519](https://user-images.githubusercontent.com/31990118/212647227-1f385ced-1d8d-4bf1-a5ff-de5dba0a6bdc.png)
