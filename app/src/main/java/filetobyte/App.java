@@ -3,12 +3,55 @@
  */
 package filetobyte;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+public class App {
+    public static void main(String[] args) throws IOException {
+        char[] ch = {'0','1','2','3','4','5','6','7','8','9', 'A', 'B', 'C', 'D', 'E', 'F'};
+        hex((byte)-1);
+
+        var br = new BufferedReader(new InputStreamReader(System.in));
+        String path = args[0];
+        File file = new File(path);
+        if(!file.exists()){
+            System.out.println("do not exists this file!");
+            return;
+        }
+        FileInputStream fi = new FileInputStream(file);
+        byte[] bt = new byte[16];
+        long number = 0;
+        int cnt = 0;
+        while(fi.read(bt) != -1){
+            if(cnt == 8){
+                br.readLine();
+                cnt = 0;
+            }
+            StringBuilder sb = new StringBuilder();
+            sb.append(String.format("%08x\t", number));
+            StringBuilder cb = new StringBuilder();
+            for(byte b:bt){
+                int i = hex(b);
+                sb.append(ch[i>>4]).append(ch[i&0xf]).append(' ');
+                if(b > 126 || b < 32){
+                    cb.append('-');
+                    continue;
+                }
+                cb.append((char)b);
+            }
+            sb.append("\t").append(cb);
+            System.out.println(sb);
+            cnt++;
+            number+=16;
+        }
+        fi.close();
+    }
+    static int hex(byte b){
+        int i = b;
+        i &=0xff;
+        return i;
     }
 }
